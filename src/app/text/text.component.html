@@ -1,0 +1,5 @@
+<div>{{textNode.text}}</div>
+<div *ngFor="let option of textNode.options">
+    <button mat-button *ngIf="option" (click)="moveToNext(option.nextText, option.intelligence, option.strength, option.affection)">{{option.text}}</button>
+</div>
+<button mat-button *ngIf="isEmptyObject(textNode.options)"   (click)="download()">Download your story</button>

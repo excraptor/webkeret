@@ -1,0 +1,14 @@
+<div class="center">
+    <mat-card>
+        <h1>Start a new game</h1>
+        Enter your name:
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Name" [(ngModel)]="username" required>
+            </mat-form-field>
+            <button mat-raised-button (click) = "startGame()">Let's go</button>
+        <div *ngIf="username">
+            {{username}} you are going to experience a university student's life. <br>
+            Get ready for some action.
+        </div>
+    </mat-card>
+</div>

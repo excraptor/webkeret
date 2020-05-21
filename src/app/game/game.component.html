@@ -1,0 +1,7 @@
+<div class="center">
+    <mat-card>
+        <app-text [textNode] = "textNode" (next)="goToNext($event)" (intelligence)="updateIntelligence($event)" (strength)="updateStrength($event)" (affection)="updateAffection($event)"></app-text>
+    </mat-card>
+    <button mat-button (click) = "restart()">Restart</button>
+    <app-traits [traits] = "traits"></app-traits>
+</div>
